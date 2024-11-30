@@ -20,6 +20,11 @@ using namespace std;
 //}
 
 
+char signOfNumber(int* number){
+    return (*number < 0) ? '-' : (*number > 0) ? '+' : '0';
+
+}
+
 
 int main()
 {
@@ -56,4 +61,11 @@ int main()
     //show(p, size);
     //int s = Suma(p, size);
     
+
+    //char signOfNumber
+    int userNum;
+    cout << "Please, input your number: ";
+    cin >> userNum;
+    char result = signOfNumber(&userNum);
+    cout << result;
 }
