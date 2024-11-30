@@ -1,6 +1,26 @@
 ﻿#include <iostream>
 using namespace std;
 
+
+//void show(int* ptr,int size ) {
+//    for (int i = 0; i < size, i++;) {
+//
+//        cout << *(ptr + i) << " ";
+//    }
+//
+//}
+//
+//int Suma(int* ptr, int size) {
+//    int s = 0;
+//    for (int i = 0; i < size; i++) {
+//        s += *(ptr + i);
+//    }
+//
+//    return s;
+//}
+
+
+
 int main()
 {
     system("chcp 1251>null");
@@ -21,11 +41,19 @@ int main()
     int ar[] = { 1,8,9,4,10,7,10 };
     int size = sizeof(ar) / sizeof(ar[0]);
     cout << size << endl;
-    cout << *ar << endl;
-    cout << &ar[0] << endl;
-    for (int i = 0; i < size; i++) {
-        /*cout << &ar+i << " ";*/
-        cout << *(ar + i) << " ";
-    }
+    //cout << *ar << endl;
+    //cout << &ar[0] << endl;
+    //for (int i = 0; i < size; i++) {
+    //    /*cout << &ar+i << " ";*/
+    //    cout << *(ar + i) << " ";
+    //}
 
+
+    //int* p1 = &ar[0], * p2 = &ar[2];
+    //cout << endl << p1 << " " << p2 << endl;
+    //cout << endl<< p2 - p1 << endl;//різниця в комірках
+    //int* p = ar;
+    //show(p, size);
+    //int s = Suma(p, size);
+    
 }
